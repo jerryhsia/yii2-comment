@@ -1,0 +1,29 @@
+{
+  "name": "jerryhsia/yii2-comment",
+  "description": "Comment component for yii2 framework",
+  "homepage": "https://github.com/jerryhsia/yii2-comment",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Jerry",
+      "email": "jerry9916@qq.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.4.0"
+  },
+  "require-dev": {
+  },
+  "autoload": {
+    "psr-4": {
+      "jerryhsia\\": ""
+    }
+  },
+  "extra": {
+    "writable": [
+    ],
+    "executable": [
+    ]
+  }
+}
