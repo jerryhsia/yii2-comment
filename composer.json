@@ -1,7 +1,7 @@
 {
-  "name": "jerryhsia/yii2-comment",
-  "description": "Comment component for yii2 framework",
-  "homepage": "https://github.com/jerryhsia/yii2-comment",
+  "name": "jerryhsia/yii2-plugins",
+  "description": "Plugins for yii2 framework",
+  "homepage": "https://github.com/jerryhsia/yii2-plugins",
   "type": "library",
   "license": "MIT",
   "authors": [
@@ -14,6 +14,8 @@
     "php": ">=5.4.0"
   },
   "require-dev": {
+    "yiisoft/yii2": ">=2.0.4",
+    "fxp/composer-asset-plugin": "1.0.3"
   },
   "autoload": {
     "psr-4": {
