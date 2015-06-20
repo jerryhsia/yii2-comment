@@ -11,11 +11,11 @@
     }
   ],
   "require": {
-    "php": ">=5.4.0"
+    "php": ">=5.4.0",
+    "yiisoft/yii2": "2.0.6",
+    "fxp/composer-asset-plugin": "1.0.3"
   },
   "require-dev": {
-    "yiisoft/yii2": ">=2.0.4",
-    "fxp/composer-asset-plugin": "1.0.3"
   },
   "autoload": {
     "psr-4": {
