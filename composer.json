@@ -12,10 +12,14 @@
   ],
   "require": {
     "php": ">=5.4.0",
-    "yiisoft/yii2": "2.0.6",
-    "fxp/composer-asset-plugin": "1.0.3"
+    "raven/raven": "0.12.1"
   },
   "require-dev": {
+    "yiisoft/yii2": ">=2.0.4",
+    "yiisoft/yii2-codeception": "2.0.4",
+    "codeception/codeception": "2.0.8",
+    "codeception/specify": "0.4.0",
+    "codeception/verify": "0.2.7"
   },
   "autoload": {
     "psr-4": {
