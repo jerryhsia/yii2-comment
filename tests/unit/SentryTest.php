@@ -1,10 +1,12 @@
 <?php
-use yii\codeception\TestCase;
+use Codeception\TestCase\Test;
 
-Class SentryTest extends TestCase
+class SentryTest extends Test
 {
-    public function test()
+    public function testSentry()
     {
-        
+        /* @var $sentry jerryhsia\sentry\Sentry */
+        $sentry = Yii::$app->errorHandler;
+        $sentry->captureException(new Exception('2222'));
     }
 }

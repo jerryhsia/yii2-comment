@@ -6,6 +6,11 @@ return [
     'components' => [
         'db' => [
             'class' => 'yii\db\Connection'
+        ],
+        'errorHandler' => [
+            'class' => 'jerryhsia\sentry\Sentry',
+            'environment' => 'test',
+            'dsn' => ''
         ]
     ]
 ];
