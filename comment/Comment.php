@@ -31,8 +31,8 @@ class Comment extends ActiveRecord
             'parent_id' => 'Parent ID',
             'owner_group_id' => 'Owner Group ID',
             'owner_id' => 'Owner ID',
-            'user_id' => 'User ID',
             'content' => 'Content',
+            'creator_id' => 'Creator ID',
             'created_at' => 'Created At',
         ];
     }
