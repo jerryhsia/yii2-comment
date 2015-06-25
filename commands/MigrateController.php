@@ -21,7 +21,7 @@ class MigrateController extends \yii\console\controllers\MigrateController
     {
         if ($this->_migrationFiles === null) {
             $this->_migrationFiles = [];
-            $directories = array_merge($this->$paths, [$this->migrationPath]);
+            $directories = array_merge($this->paths, [$this->migrationPath]);
             $extraPath = ArrayHelper::getValue(Yii::$app->params, 'yii.migrations');
             if (!empty($extraPath)) {
                 $directories = array_merge((array) $extraPath, $directories);

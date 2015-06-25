@@ -2,7 +2,7 @@
 $config = [
     'id' => 'app-console',
     'basePath' => dirname(__DIR__),
-    'controllerNamespace' => 'app\commands'
+    'controllerNamespace' => 'app\commands',
 ];
 
 $config = yii\helpers\ArrayHelper::merge(
