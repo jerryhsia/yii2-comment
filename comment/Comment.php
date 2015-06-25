@@ -33,7 +33,7 @@ class Comment extends ActiveRecord
             'owner_id' => 'Owner ID',
             'content' => 'Content',
             'creator_id' => 'Creator ID',
-            'created_at' => 'Created At',
+            'created_at' => 'Created At'
         ];
     }
 }
