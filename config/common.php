@@ -1,7 +1,6 @@
 <?php
 $config = [
     'language' => 'zh-CN',
-    'params' => require(__DIR__ . '/params.php'),
     'components' => [
         'cache' => [
             'class' => 'yii\caching\FileCache'
