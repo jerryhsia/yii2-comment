@@ -58,7 +58,7 @@ class Comment extends ActiveRecord
 
     public function getCreator()
     {
-        return $this->hasOne(Yii::$app->commentService->commentCreatorModel,
+        return $this->hasOne(Yii::$app->commentService->commentCreatorClass,
             [Yii::$app->commentService->commentCreatorIdField => 'creator_id']
         );
     }

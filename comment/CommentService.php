@@ -7,7 +7,7 @@ class CommentService extends Component
 {
     public $commentClass = 'jerryhsia\comment\Comment';
 
-    public $commentCreatorModel = '';
+    public $commentCreatorClass = '';
 
     public $commentCreatorIdField = 'id';
 
