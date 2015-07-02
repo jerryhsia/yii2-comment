@@ -37,7 +37,8 @@ class Comment extends ActiveRecord
                 return 0;
             }],
             [['owner_group_id', 'owner_id', 'creator_id', 'content'], 'required'],
-            [['parent_id'], 'default', 'value' => 0],
+            ['parent_id', 'default', 'value' => 0],
+            ['created_at', 'default', 'value' => time()],
             ['content', 'filter', 'filter' => function() {
                 return Html::encode(trim($this->content));
             }]
