@@ -3,6 +3,7 @@
 namespace jerryhsia\comment;
 use yii\db\ActiveRecord;
 use Yii;
+use yii\helpers\Html;
 
 /**
  * This is the model class for table "{{%comment}}".
@@ -36,7 +37,10 @@ class Comment extends ActiveRecord
                 return 0;
             }],
             [['owner_group_id', 'owner_id', 'creator_id', 'content'], 'required'],
-            [['parent_id'], 'default', 'value' => 0]
+            [['parent_id'], 'default', 'value' => 0],
+            ['content', 'filter', 'filter' => function() {
+                return Html::encode(trim($this->content));
+            }]
         ];
     }
 
@@ -61,5 +65,12 @@ class Comment extends ActiveRecord
         return $this->hasOne(Yii::$app->commentService->commentCreatorClass,
             [Yii::$app->commentService->commentCreatorIdField => 'creator_id']
         );
+    }
+
+    public function getParent()
+    {
+        return $this->hasOne(Yii::$app->commentService->commentClass, [
+            'id' => 'parent_id'
+        ]);
     }
 }
