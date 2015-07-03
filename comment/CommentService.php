@@ -23,7 +23,7 @@ class CommentService extends Component
         return $model->save();
     }
 
-    public function search(array $filter = [])
+    public function search(array $filters = [])
     {
         $class = $this->commentClass;
         $query = $class::find();
